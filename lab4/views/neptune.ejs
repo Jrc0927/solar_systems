@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head.ejs') %>
+</head>
+<body>
+ <main class="page-content">
+    <%- include('partials/nav.ejs') %>
+    <h2>Planet Neptune</h2>
+    <%=   planetNeptune.description  %> </br>
+    <img class="planet-img" src="<%=   planetNeptune.image  %>">
+	<h2>Distance From Sun</h2>
+    <%=   planetNeptune.distanceFromSun  %>
+	<h2>Length of One Year</h2>
+    <%=   planetNeptune.yearLength  %>
+	<h2>Radius</h2>
+    <%=   planetNeptune.radius  %>
+	<h2>One Earth Day</h2>
+    <%=   planetNeptune.oneEarthDay  %>
+	<h2>Amount of Moons</h2>
+    <%=   planetNeptune.moons  %>
+	<h2>Website Link</h2>
+    <%=   planetNeptune.websiteLink %>
+ </main>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>

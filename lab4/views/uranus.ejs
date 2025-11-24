@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include('partials/head.ejs') %>
+</head>
+<body>
+ <main class="page-content">
+    <%- include('partials/nav.ejs') %>
+    <h2>Planet Uranus</h2>
+    <%=   planetUranus.description  %> </br>
+    <img class="planet-img" src="<%=   planetUranus.image  %>">
+	<h2>Distance From Sun</h2>
+    <%=   planetUranus.distanceFromSun  %>
+	<h2>Length of One Year</h2>
+    <%=   planetUranus.yearLength  %>
+	<h2>Radius</h2>
+    <%=   planetUranus.radius  %>
+	<h2>One Earth Day</h2>
+    <%=   planetUranus.oneEarthDay  %>
+	<h2>Amount of Moons</h2>
+    <%=   planetUranus.moons  %>
+	<h2>Website Link</h2>
+    <%=   planetUranus.websiteLink %>
+</main>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
